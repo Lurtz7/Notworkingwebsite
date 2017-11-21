@@ -1,34 +1,28 @@
-﻿body
-{
-    
+.divbody {
+  background-color: sandybrown;
+  padding: 10px;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
 }
-
-.divbody{
-     background-color:darkolivegreen;
-     margin:10% auto;
-     display: flex;
-     flex-direction:row;
-     padding:10px;
-    
+.stars span {
+  color: #b4b4b4;
+  user-select: none;
+  cursor: pointer;
+  font-size: 15px;
 }
-.Text {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.stars .filled {
+  color: red;
 }
-
-.divImage {
-    float: left;
-    margin: 5%;
+.divtext {
+  margin-left: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-h3 {
-    margin-top: 10%;
-    
-}
-ul{
-    margin-top: 5%; 
-    display: flex;
-
+#divImage {
+  max-width: 300px;
+  max-height: 400px;
 }
