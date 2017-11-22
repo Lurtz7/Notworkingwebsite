@@ -4,7 +4,7 @@
   "main": "Code.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "styles": "lessc css.less distribution/css.css",
+    "styles": "lessc CSS.less distribution/CSS.css",
     "bundle": "webpack",
     "copyindex": "cp index.html distribution/index.html",
     "build": "npm run bundle && npm run styles && npm run copyindex"

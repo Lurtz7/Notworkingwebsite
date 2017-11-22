@@ -1,3 +1,5 @@
+let $ = require("jquery");
+
 let ui = {
     title: $("#movietitle"),
     picture: $("#divImg"),
