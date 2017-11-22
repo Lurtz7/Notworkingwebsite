@@ -1,5 +1,5 @@
-let $ = require("jquery");
-
+import { movieData } from "./Data.ts";
+import * as $ from "jquery";
 let ui = {
     title: $("#movietitle"),
     picture: $("#divImg"),
@@ -18,7 +18,7 @@ function renderMovie(movie) {
     }
 
 }   
-let movieData = require("./data");
+
 
 renderMovie(movieData);
     

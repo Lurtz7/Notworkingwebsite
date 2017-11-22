@@ -65,15 +65,20 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-let $ = __webpack_require__(1);
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Data_ts__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_jquery__);
+
 
 let ui = {
-    title: $("#movietitle"),
-    picture: $("#divImg"),
-    description: $("#movieDes"),    
-    actor: $("#actor")    
+    title: __WEBPACK_IMPORTED_MODULE_1_jquery__("#movietitle"),
+    picture: __WEBPACK_IMPORTED_MODULE_1_jquery__("#divImg"),
+    description: __WEBPACK_IMPORTED_MODULE_1_jquery__("#movieDes"),    
+    actor: __WEBPACK_IMPORTED_MODULE_1_jquery__("#actor")    
 }
 
 function renderMovie(movie) {
@@ -87,13 +92,13 @@ function renderMovie(movie) {
     }
 
 }   
-let movieData = __webpack_require__(2);
 
-renderMovie(movieData);
+
+renderMovie(__WEBPACK_IMPORTED_MODULE_0__Data_ts__["a" /* movieData */]);
     
 function changeStarRating(rating) {
     for (let i = 1; i <= 5; i++) {
-        let star = $("#star" + i);
+        let star = __WEBPACK_IMPORTED_MODULE_1_jquery__("#star" + i);
         if (i <= rating) {
             star.addClass("filled");
         } else {
@@ -102,8 +107,8 @@ function changeStarRating(rating) {
     }
 }
 
-$(".stars").on("click", "span", function (e) {
-    let star = $(e.target);
+__WEBPACK_IMPORTED_MODULE_1_jquery__(".stars").on("click", "span", function (e) {
+    let star = __WEBPACK_IMPORTED_MODULE_1_jquery__(e.target);
     let opt = star.attr("id");
     if (star.hasClass("filled")) {
         changeStarRating(0);
@@ -115,6 +120,20 @@ $(".stars").on("click", "span", function (e) {
 
 /***/ }),
 /* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+const movieData = {
+    title: "Inception", 
+    picture: "https://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/inception_keyart.jpg?itok=7jXiglyb",
+    description: "Inception �r en amerikansk thriller/sci-fi/action-l�ngfilm fr�n 2010 i regi av Christopher Nolan som ocks� har skrivit manus. Medverkar g�r bland andra Leonardo DiCaprio, Joseph Gordon- Levitt, Ellen Page, Cillian Murphy och Ken Watanabe.",
+    actorsList: ["Leonardo DiCaprio", "Ellen Page", "Tom Hardy"]
+};
+/* harmony export (immutable) */ __webpack_exports__["a"] = movieData;
+  
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10372,17 +10391,6 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = {
-    title: "Inception", 
-    picture: "https://www.warnerbros.com/sites/default/files/styles/key_art_270x400/public/inception_keyart.jpg?itok=7jXiglyb",
-    description: "Inception �r en amerikansk thriller/sci-fi/action-l�ngfilm fr�n 2010 i regi av Christopher Nolan som ocks� har skrivit manus. Medverkar g�r bland andra Leonardo DiCaprio, Joseph Gordon- Levitt, Ellen Page, Cillian Murphy och Ken Watanabe.",
-    actorsList: ["Leonardo DiCaprio", "Ellen Page", "Tom Hardy"]
-};  
 
 /***/ })
 /******/ ]);
