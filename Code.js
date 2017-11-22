@@ -16,6 +16,8 @@ function renderMovie(movie) {
     }
 
 }   
+let movieData = require("./data");
+
 renderMovie(movieData);
     
 function changeStarRating(rating) {

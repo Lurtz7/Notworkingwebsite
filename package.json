@@ -4,7 +4,10 @@
   "main": "Code.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "styles": "lessc css.less css.css"
+    "styles": "lessc css.less distribution/css.css",
+    "bundle": "webpack",
+    "copyindex": "cp index.html distribution/index.html",
+    "build": "npm run bundle && npm run styles && npm run copyindex"
   },
   "repository": {
     "type": "git",
@@ -18,7 +21,12 @@
   "homepage": "https://github.com/Lurtz7/Notworkingwebsite#readme",
   "description": "",
   "devDependencies": {
-    "less": "^2.7.3"
+    "less": "^2.7.3",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
   }
-
 }
+
+
